@@ -23,3 +23,8 @@ if (data) {
   const user = findUserByID(data, searchID);
   console.log(user ? "User found:" : "User not found:", user);
 }
+
+function getCPF(user) {
+  const docCPF = user.documents.find((doc) => doc.type === "CPF");
+  return docCPF ? docCPF.number : "CPF Not Found";
+}
