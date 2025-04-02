@@ -31,6 +31,7 @@ function getCPF(user) {
 
 function listUserByAge(data) {
   return data
+    .filter((user) => getCPF(user) !== null)
     .sort((a, b) => a.age - b.age)
     .map((user) => ({
       Name: user.name,
