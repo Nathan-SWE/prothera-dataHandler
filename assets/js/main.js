@@ -10,16 +10,16 @@ function loadJSONData(filePath) {
     const jsonData = fs.readFileSync(filePath, "utf8");
     return JSON.parse(jsonData);
   } catch (error) {
-    console.log("Erro ao carregar arquivo JSON:", error);
+    console.log("Error when loading json file:", error);
     return null;
   }
 }
 
 function findUserByID(data, id) {
-  return data.find((user) => user.ID === id);
+  return data.find((user) => user.id === id);
 }
 
 if (data) {
   const user = findUserByID(data, searchID);
-  console.log(user ? "Usuário encontrado:" : "Usuário não encontrado:", user);
+  console.log(user ? "User found:" : "User not found:", user);
 }
