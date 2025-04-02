@@ -28,3 +28,18 @@ function getCPF(user) {
   const docCPF = user.documents.find((doc) => doc.type === "CPF");
   return docCPF ? docCPF.number : "CPF Not Found";
 }
+
+function listUserByAge(data) {
+  return data
+    .sort((a, b) => a.age - b.age)
+    .map((user) => ({
+      Name: user.name,
+      Age: user.age,
+      CPF: getCPF(user),
+    }));
+}
+
+if (data) {
+  const sortedUsers = listUserByAge(data);
+  console.log("People ordered by age:", sortedUsers);
+}
