@@ -2,6 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const filePath = path.join(__dirname, "../../data/data.json");
+const data = loadJSONData(filePath);
+const searchID = 2;
 
 function loadJSONData(filePath) {
   try {
@@ -11,4 +13,13 @@ function loadJSONData(filePath) {
     console.log("Erro ao carregar arquivo JSON:", error);
     return null;
   }
+}
+
+function findUserByID(data, id) {
+  return data.find((user) => user.ID === id);
+}
+
+if (data) {
+  const user = findUserByID(data, searchID);
+  console.log(user ? "Usuário encontrado:" : "Usuário não encontrado:", user);
 }

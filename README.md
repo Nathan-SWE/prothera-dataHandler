@@ -2,7 +2,7 @@
 
 Crie um algoritmo para listar:
 
-Pessoa com ID = 2.
+✅ Pessoa com ID = 2.
 
 Listagem de pessoas em ordem crescente de idade com o número do CPF.
 
