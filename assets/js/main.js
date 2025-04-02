@@ -41,5 +41,5 @@ function listUserByAge(data) {
 
 if (data) {
   const sortedUsers = listUserByAge(data);
-  console.log("People ordered by age:", sortedUsers);
+  console.log("People with CPF ordered by age:", sortedUsers);
 }
