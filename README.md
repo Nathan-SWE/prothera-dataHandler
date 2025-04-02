@@ -6,7 +6,7 @@ Crie um algoritmo para listar:
 
 ✅ Listagem de pessoas em ordem crescente de idade com o número do CPF.
 
-Pessoas com idade superior a 50 anos.
+✅ Pessoas com idade superior a 50 anos.
 
 Pessoas que não possuem CPF.
 

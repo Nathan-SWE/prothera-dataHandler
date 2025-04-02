@@ -43,3 +43,18 @@ if (data) {
   const sortedUsers = listUserByAge(data);
   console.log("People with CPF ordered by age:", sortedUsers);
 }
+
+function usersAgeGreaterThan50(data) {
+  return data
+    .filter((user) => user.age > 50)
+    .map((user) => ({
+      ID: user.id,
+      Name: user.name,
+      Age: user.age,
+    }));
+}
+
+if (data) {
+  const elders = usersAgeGreaterThan50(data);
+  console.log("People over 50 years old:", elders);
+}
