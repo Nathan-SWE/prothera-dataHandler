@@ -8,6 +8,6 @@ Crie um algoritmo para listar:
 
 ✅ Pessoas com idade superior a 50 anos.
 
-Pessoas que não possuem CPF.
+✅ Pessoas que não possuem CPF.
 
 Listagem de tipos de documentos.

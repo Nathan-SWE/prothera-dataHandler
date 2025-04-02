@@ -26,7 +26,7 @@ if (data) {
 
 function getCPF(user) {
   const docCPF = user.documents.find((doc) => doc.type === "CPF");
-  return docCPF ? docCPF.number : "CPF Not Found";
+  return docCPF ? docCPF.number : null;
 }
 
 function listUserByAge(data) {
@@ -58,3 +58,10 @@ if (data) {
   const elders = usersAgeGreaterThan50(data);
   console.log("People over 50 years old:", elders);
 }
+
+function listUsersWithoutCPF(data) {
+  return data.filter((user) => !getCPF(user));
+}
+
+const peopleWithoutCPF = listUsersWithoutCPF(data);
+console.log("Users without CPF:", peopleWithoutCPF);
