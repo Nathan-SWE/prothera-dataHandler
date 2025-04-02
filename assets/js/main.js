@@ -2,8 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const filePath = path.join(__dirname, "../../data/data.json");
-const data = loadJSONData(filePath);
 const searchID = 2;
+const data = loadJSONData(filePath);
 
 function loadJSONData(filePath) {
   try {
@@ -21,7 +21,7 @@ function findUserByID(data, id) {
 
 if (data) {
   const user = findUserByID(data, searchID);
-  console.log(user ? "User found:" : "User not found:", user);
+  console.log(user ? "\nUser found:" : "\nUser not found:", user);
 }
 
 function getCPF(user) {
@@ -42,7 +42,7 @@ function listUserByAge(data) {
 
 if (data) {
   const sortedUsers = listUserByAge(data);
-  console.log("People with CPF ordered by age:", sortedUsers);
+  console.log("\nPeople with CPF ordered by age:", sortedUsers);
 }
 
 function usersAgeGreaterThan50(data) {
@@ -57,7 +57,7 @@ function usersAgeGreaterThan50(data) {
 
 if (data) {
   const elders = usersAgeGreaterThan50(data);
-  console.log("People over 50 years old:", elders);
+  console.log("\nPeople over 50 years old:", elders);
 }
 
 function listUsersWithoutCPF(data) {
@@ -65,7 +65,7 @@ function listUsersWithoutCPF(data) {
 }
 
 const peopleWithoutCPF = listUsersWithoutCPF(data);
-console.log("Users without CPF:", peopleWithoutCPF);
+console.log("\nUsers without CPF:", peopleWithoutCPF);
 
 function listAllDocumentTypes(data) {
   const documentTypes = [
@@ -75,4 +75,4 @@ function listAllDocumentTypes(data) {
 }
 
 const allDocumentTypes = listAllDocumentTypes(data);
-console.log("All document types:", allDocumentTypes);
+console.log("\nAll document types:", allDocumentTypes);
