@@ -66,3 +66,13 @@ function listUsersWithoutCPF(data) {
 
 const peopleWithoutCPF = listUsersWithoutCPF(data);
 console.log("Users without CPF:", peopleWithoutCPF);
+
+function listAllDocumentTypes(data) {
+  const documentTypes = [
+    ...new Set(data.flatMap((user) => user.documents.map((doc) => doc.type))),
+  ];
+  return documentTypes;
+}
+
+const allDocumentTypes = listAllDocumentTypes(data);
+console.log("All document types:", allDocumentTypes);

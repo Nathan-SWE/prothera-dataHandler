@@ -10,4 +10,4 @@ Crie um algoritmo para listar:
 
 ✅ Pessoas que não possuem CPF.
 
-Listagem de tipos de documentos.
+✅ Listagem de tipos de documentos.
