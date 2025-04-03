@@ -9,6 +9,7 @@ Este projeto é um sistema de gerenciamento de usuários que processa dados arma
 - Listar pessoas com idade superior a 50 anos
 - Listar pessoas que não possuem CPF
 - Listar todos os tipos de documentos únicos presentes nos dados
+- **(NOVO!) Instruções SQL para consultar dados** 🆕
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -21,10 +22,11 @@ Este projeto é um sistema de gerenciamento de usuários que processa dados arma
 ```plaintext
 📂 prothera-dataHandler
  ├── 📂 data
- │   ├── data.json  # Arquivo JSON com os dados dos usuários
+ │   ├── data.json    # Arquivo JSON com os dados dos usuários
+ |   ├── queries.sql  # Arquivo SQL com instruções para listar os dados
  ├── 📂 src
- │   ├── main.js    # Script principal do projeto
- ├── README.md      # Documentação do projeto
+ │   ├── main.js      # Script principal do projeto
+ ├── README.md        # Documentação do projeto
 ```
 
 ## 🔧 Configuração e Execução
